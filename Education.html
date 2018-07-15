@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jay Battle</title>
+  <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    main {
+      flex: 1 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+  <nav>
+    <div class="nav-wrapper purple">
+      <a href="#!" class="brand-logo">   Jay Battle</a>
+      <ul class="right hide-on-med-and-down">
+        <li class="active"><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Skills.html">Skills</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="WorkExperience.html">Work Experience</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Leadership.html">Leadership</a></li>
+        <li><a href="Resume.html">Resume</a></li>
+        <li><a href="SocialMedia.html">Social Media</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="parallax-container">
+     <div class="parallax"><img src="images/mucampus.jpg"></div>
+   </div>
+
+   <div class="row">
+    <div class="col s6">
+      <p class="flow-text">Marquette University</p>
+      <blockquote>
+      Bachelor of Science in Biomedical Engineering/Biocomputing
+        <br> August 2013 - May 2017
+       <br> 1250 W Wisconsin Ave, Milwaukee, WI 53233
+       <br><a href="https://marquette.edu">marquette.edu</a>
+     </blockquote>
+    </div>
+    <div class="col s6">
+      <img class="responsive-img" src="images/mu.jpg" width="500" height="500">
+    </div>
+  </div>
+
+   <div class="parallax-container">
+      <div class="parallax"><img src="images/uofdcampus.png"></div>
+  </div>
+
+  <div class="row">
+       <div class="col s6">
+         <img class="responsive-img" src="images/uofd.jpg" width="300" height="300">
+       </div>
+       <div class="col s6">
+         <p class="flow-text">University of Detroit Jesuit Highschool and Academy</p>
+         <blockquote>
+         Cum Laude
+           <br> August 2007 - May 2013
+          <br> 8400 N Cambridge Ave, Detroit, MI 48221
+          <br><a href="https://www.uofdjesuit.org/">uofdjesuit.org</a>
+        </blockquote>
+       </div>
+     </div>
+
+</main>
+
+
+
+<footer class="page-footer black">
+         <div class="container">
+           <div class="row">
+             <div class="col l6 s12">
+               <h5 class="white-text">Jay Battle</h5>
+               <p class="grey-text text-lighten-4">Made with Materialize</p>
+             </div>
+             <div class="col l4 offset-l2 s12">
+               <h5 class="white-text">Links</h5>
+               <ul>
+                 <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#!">Resume</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#!">Contacts</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
+               </ul>
+             </div>
+           </div>
+         </div>
+         <div class="footer-copyright">
+           <div class="container">
+           © 2018 Copyright Jalen Battle
+           <a class="grey-text text-lighten-4 right" href="#!"Jay Battle Jay Battle Jay Battle!!!</a>
+           </div>
+         </div>
+       </footer>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems, options);
+      });
+
+      // Or with jQuery
+
+      $(document).ready(function(){
+        $('.parallax').parallax();
+      });
+   </script>
+
+</body>
+  </html>
