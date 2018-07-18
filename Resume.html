@@ -27,6 +27,7 @@
   <nav>
     <div class="nav-wrapper purple">
       <a href="#!" class="brand-logo">   Jay Battle</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="home.html">Home</a></li>
         <li><a href="About.html">About</a></li>
@@ -41,10 +42,22 @@
       </ul>
     </div>
   </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Skills.html">Skills</a></li>
+    <li><a href="Education.html">Education</a></li>
+    <li><a href="WorkExperience.html">Work Experience</a></li>
+    <li><a href="Projects.html">Projects</a></li>
+    <li><a href="Leadership.html">Leadership</a></li>
+    <li class="active"><a href="Resume.html">Resume</a></li>
+    <li><a href="SocialMedia.html">Social Media</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
 </header>
 
 <main>
-  <object data="Docs/JayBattleResume.pdf" type="application/pdf" width="100%" height="1000" allowfullscreen>
+  <object data="Docs/JayBattleResumeWEB.pdf" type="application/pdf" width="100%" height="1000" allowfullscreen>
  <p>It appears you don't have a PDF plugin for this browser.
    <br> You can <a href="resume.pdf">click here to download the PDF file.</a>
  </p>
@@ -95,6 +108,18 @@
         $('.parallax').parallax();
       });
    </script>
+   <script>
+      document.addEventListener('DOMContentLoaded', function() {
+       var elems = document.querySelectorAll('.sidenav');
+       var instances = M.Sidenav.init(elems, options);
+      });
+
+      // Or with jQuery
+
+      $(document).ready(function(){
+       $('.sidenav').sidenav();
+      });
+  </script>
 
 </body>
   </html>

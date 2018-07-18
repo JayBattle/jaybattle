@@ -22,11 +22,12 @@
   </style>
 </head>
 
-<body background="images/abs7.jpeg">
+<body background="images/Abs7.jpeg">
   <header>
   <nav>
     <div class="nav-wrapper purple">
       <a href="#!" class="brand-logo">   Jay Battle</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="home.html">Home</a></li>
         <li><a href="About.html">About</a></li>
@@ -41,6 +42,18 @@
       </ul>
     </div>
   </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Skills.html">Skills</a></li>
+    <li><a href="Education.html">Education</a></li>
+    <li><a href="WorkExperience.html">Work Experience</a></li>
+    <li><a href="Projects.html">Projects</a></li>
+    <li><a href="Leadership.html">Leadership</a></li>
+    <li><a href="Resume.html">Resume</a></li>
+    <li class="active"><a href="SocialMedia.html">Social Media</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
 </header>
 
 <main>
@@ -52,7 +65,7 @@
     <div class="col s3 m3">
       <div class="card z-depth-5">
       <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="images/in.png" width="300px" height="300px">
+        <img class="activator responsive-img" src="images/in.png" width="300px" height="300px">
       </div>
       <div class="card-content">
         <span class="card-title activator grey-text text-darken-4">LinkedIn<i class="material-icons right">more_vert</i></span>
@@ -68,7 +81,7 @@
   <div class="col s3 m3">
     <div class="card z-depth-5">
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/gh.png" width="300px" height="300px">
+      <img class="activator responsive-img" src="images/gh.png" width="300px" height="300px">
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">GitHub<i class="material-icons right">more_vert</i></span>
@@ -128,6 +141,18 @@
         $('.parallax').parallax();
       });
    </script>
+   <script>
+      document.addEventListener('DOMContentLoaded', function() {
+       var elems = document.querySelectorAll('.sidenav');
+       var instances = M.Sidenav.init(elems, options);
+      });
+
+      // Or with jQuery
+
+      $(document).ready(function(){
+       $('.sidenav').sidenav();
+      });
+  </script>
 
 </body>
   </html>

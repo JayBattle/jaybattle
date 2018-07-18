@@ -22,11 +22,12 @@
   </style>
 </head>
 
-<body background="images/abs6.jpeg">
+<body background="images/Abs6.jpeg">
   <header>
   <nav>
     <div class="nav-wrapper purple">
       <a href="#!" class="brand-logo">   Jay Battle</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="home.html">Home</a></li>
         <li class="active"><a href="About.html">About</a></li>
@@ -41,6 +42,18 @@
       </ul>
     </div>
   </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="home.html">Home</a></li>
+    <li class="active"><a href="About.html">About</a></li>
+    <li><a href="Skills.html">Skills</a></li>
+    <li><a href="Education.html">Education</a></li>
+    <li><a href="WorkExperience.html">Work Experience</a></li>
+    <li><a href="Projects.html">Projects</a></li>
+    <li><a href="Leadership.html">Leadership</a></li>
+    <li><a href="Resume.html">Resume</a></li>
+    <li><a href="SocialMedia.html">Social Media</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
 </header>
 
 <main>
@@ -52,7 +65,7 @@
     <div class="col s12 center"></div>
     <div class="col s12 center"></div>
     <div class="col s12 center">
-      <img class="responsive-img circle z-depth-5" src="images/userPic.jpg" style="width:500px;height:600px;">
+      <img class="responsive-img circle z-depth-5" src="images/userPic.jpg" style="width:500px;">
     </div>
   <div class="col s2"></div>
    <div class="col s8 card-panel purple z-depth-5">
@@ -116,6 +129,19 @@
         $('.parallax').parallax();
       });
    </script>
+
+   <script>
+      document.addEventListener('DOMContentLoaded', function() {
+       var elems = document.querySelectorAll('.sidenav');
+       var instances = M.Sidenav.init(elems, options);
+      });
+
+      // Or with jQuery
+
+      $(document).ready(function(){
+       $('.sidenav').sidenav();
+      });
+  </script>
 
 </body>
   </html>
