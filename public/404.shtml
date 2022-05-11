@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Jay Battle: About</title>
+  <title>Jay Battle</title>
   <script type="text/javascript" src="https://js-cdn.dynatracelabs.com/jstag/1468ae7109d/bf91939oxw/e0c91832fcf93e36_complete.js" crossorigin="anonymous"></script>
   <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -23,15 +23,14 @@
   </style>
 </head>
 
-<body background="images/Abs6.jpeg">
+<body background="images/lost.jpeg">
   <header>
   <nav>
     <div class="nav-wrapper purple">
       <a href="#!" class="brand-logo">   Jay Battle</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="home.html">Home</a></li>
-        <li class="active"><a href="About.html">About</a></li>
+        <li><a href="Home.html">Home</a></li>
         <li><a href="Skills.html">Skills</a></li>
         <li><a href="Education.html">Education</a></li>
         <li><a href="WorkExperience.html">Work Experience</a></li>
@@ -43,8 +42,7 @@
     </div>
   </nav>
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="home.html">Home</a></li>
-    <li class="active"><a href="About.html">About</a></li>
+    <li><a href="Home.html">Home</a></li>
     <li><a href="Skills.html">Skills</a></li>
     <li><a href="Education.html">Education</a></li>
     <li><a href="WorkExperience.html">Work Experience</a></li>
@@ -57,33 +55,32 @@
 
 <main>
   <div class="row">
-    <div class="col s12 center"></div>
-    <div class="col s12 center"></div>
-    <div class="col s12 center"></div>
-    <div class="col s12 center"></div>
-    <div class="col s12 center"></div>
-    <div class="col s12 center"></div>
-    <div class="col s12 center">
-      <img class="responsive-img circle z-depth-5" src="images/userPic.jpg" style="width:500px;">
+      <div class="row">
+        <div class="col s12 center">
+          <div class="col s12 center"><p class="flow-text"><h1><a class="white-text">404: "These are not the droids you are looking for!""</a></h1></p></div>
+        </div>
+        <div class="col s4"></div>
+        <div class="col s4 m4">
+          <div class="card z-depth-5">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator responsive-img" src="images/404.gif" width="300px" height="300px">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">404<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">404<i class="material-icons right">close</i></span>
+            <p>
+              <p class="flow-text"><h4><a class="black-text text-lighten-4">Are you lost?</a></h4></p>
+              <br><a class="black-text text-lighten-4" href="http://www.jaybattle.net">Go Home</a>
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s4"></div>
     </div>
-  <div class="col s2"></div>
-   <div class="col s8 card-panel purple z-depth-5">
-     <p class="flow-text white-text">About</p>
-     <blockquote> <p class="white-text">
-      Software developer with two years of experience in backend development and special interests in
-      <br> clean code philosophies, Object-oriented development, and Scrum Agile methodologies.
-      <br> Marquette University alumni with a Bachelor of Science in Biomedical Engineering/Biocomputing.
-      <br> My passions are innovative problem solving, code revisions, and developing
-      <br> autonomous solutions to everyday problems.
-      <p>
-    </blockquote>
-   </div>
-   <div class="col s2"></div>
 
-
- </div>
 </main>
-
 
 <footer class="page-footer black">
          <div class="container">
@@ -128,7 +125,6 @@
         $('.parallax').parallax();
       });
    </script>
-
    <script>
       document.addEventListener('DOMContentLoaded', function() {
        var elems = document.querySelectorAll('.sidenav');

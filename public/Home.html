@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Jay Battle</title>
+  <title>JayBattle.net</title>
   <script type="text/javascript" src="https://js-cdn.dynatracelabs.com/jstag/1468ae7109d/bf91939oxw/e0c91832fcf93e36_complete.js" crossorigin="anonymous"></script>
   <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -30,7 +29,8 @@
       <a href="#!" class="brand-logo">   Jay Battle</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li class="active"><a href="home.html">Home</a></li>
+        <li class="active"><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
         <li><a href="Skills.html">Skills</a></li>
         <li><a href="Education.html">Education</a></li>
         <li><a href="WorkExperience.html">Work Experience</a></li>
@@ -42,7 +42,8 @@
     </div>
   </nav>
   <ul class="sidenav" id="mobile-demo">
-    <li class="active"><a href="home.html">Home</a></li>
+    <li class="active"><a href="Home.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
     <li><a href="Skills.html">Skills</a></li>
     <li><a href="Education.html">Education</a></li>
     <li><a href="WorkExperience.html">Work Experience</a></li>
@@ -54,7 +55,28 @@
 </header>
 
 <main>
+  <div class="parallax-container">
+     <div class="parallax"><img src="images/battlestation.jpg"></div>
+   </div>
 
+   <div class="row">
+    <div class="col s6">
+      <p class="flow-text">Jay Battle</p>
+      <blockquote>
+       Biomedical Engineer
+       <br>A BioComputing major with a passion for Backend Development
+       <br><a class="black-text" href="mailto:jaywbattle@gmail.com" target="_top">jaywbattle@gmail.com</a>
+       <br>(313) 212-7409
+     </blockquote>
+    </div>
+    <div class="col s6">
+      <img class="responsive-img" src="images/JB.jpg" width="200" height="200">
+    </div>
+  </div>
+
+   <div class="parallax-container">
+        <div class="parallax"><img src="images/ir2.JPG"></div>
+      </div>
 </main>
 
 <footer class="page-footer black">
@@ -98,6 +120,18 @@
 
       $(document).ready(function(){
         $('.parallax').parallax();
+      });
+   </script>
+
+   <script>
+      var instance = M.Carousel.init({
+        fullWidth: true,
+        indicators: true
+      });
+      // Or with jQuery
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
       });
    </script>
    <script>
